@@ -1,0 +1,4 @@
+void particle   1
+smol crate      1
+expresso        10  *.8 > 7
+scratchy        30  *.8 > 23

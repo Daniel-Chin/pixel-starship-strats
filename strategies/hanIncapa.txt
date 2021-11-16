@@ -1,0 +1,57 @@
+Manual:
+    When 5 crafts deployed: 
+        HAN = 1
+
+Rooms layout:
+    SEC at choke point between elevators. 
+        Otherwise, rush EMP -> TLP. 
+
+AI:
+    Zombie:
+        use power
+        -> SHL
+    HAN
+        =4
+        load dearest
+        -> AS
+        -> HAN
+        -> AA
+        -> Laser
+        -> MSL
+    MLZ x 2, BT x 2
+        if my shield full, =0
+        +1
+        -> AS
+        -> HAN
+        -> AA
+        -> Laser
+        -> MSL
+    MG
+        +1
+        -> AS
+        -> HAN
+        -> AA
+        -> Laser
+        -> MSL
+    MSL x 2
+        +1
+        load fire; white
+        -> AS
+        -> HAN
+        -> AA
+        -> Laser
+        -> MSL
+    TLP
+        if enemy shield full, =3
+        =0
+        
+    SHL
+        =3
+    SEC
+        if enemy TLP, +1
+        =0
+    ENG
+        if my shield full, =0
+        if enemy craft, +1
+        if enemy MSL, +1
+        -1

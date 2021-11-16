@@ -1,8 +1,10 @@
 Manual:
     Once zombie boards:
         TLP = 0
+    When 5 crafts deployed: 
+        HAN = 1
 
-Room layout:
+Rooms layout:
     SEC at choke point between elevators. 
         Otherwise, rush EMP -> TLP. 
 
@@ -16,9 +18,11 @@ AI:
         if enemy shield full, -> SHL
         ...fixer AI
     MSL x 1
+        +1
+        -> AS
         -> SHL
-        load EMP
         if enemy shield full, load fire
+        load EMP
     
     # rush AA
     MG
@@ -26,11 +30,12 @@ AI:
         +1
     MLZ x 2, BT x 2
         -> AA
-        if my sheild full, =0
+        if my shield full, =0
         +1
     HAN
         -> AA
         +1
+        load dearest
     rushers
         pilots rush HAN
         others rush TLP
@@ -38,12 +43,6 @@ AI:
     # defense
     SHL:
         =3
-    ENG x 1:
-        if full shield, =0
-        if MSL, +1
-        if no enemy craft, =0
-        if our AA full HP, =0
-        +1
     AA
         if active craft, =2
         =0
@@ -51,6 +50,6 @@ AI:
         +1
         load service
     SEC
-        if full shield, =0
+        if my shield full, =0
         if enemy TLP, =1
         =0

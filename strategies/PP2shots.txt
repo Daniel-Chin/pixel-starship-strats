@@ -1,0 +1,4 @@
+Manual:
+    2:43, when PP fires second shot
+        turn off PP
+        turn on MLZ
