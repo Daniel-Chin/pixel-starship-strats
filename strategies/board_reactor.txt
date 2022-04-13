@@ -1,0 +1,5 @@
+Prereq:
+    python 3
+
+use `if crew in room` denote whether enemy shield has been dissolved. 
+power switch from anti-shield + TLP to lasers + MD. 

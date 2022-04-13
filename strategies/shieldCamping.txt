@@ -1,7 +1,6 @@
-Destroy enemy HAN fast, so I dont' need AA. 
-Destroy enemy AA. 
-
 Manual:
+    when 2 boarded, 
+        TLP = 0
     When 5 crafts deployed: 
         HAN = 1
 
@@ -10,39 +9,41 @@ Rooms layout:
         Otherwise, rush EMP -> TLP. 
 
 AI:
-    Zombie:
+    Rusher x n:
+        rush TLP only after the first zombie is sent away. 
+    Zombie x 2:
         use power
         -> SHL
     HAN
         =4
         load dearest
-        -> AS
         -> HAN
-        -> AA
+        -> AS
         -> Laser
+        -> AA
         -> MSL
     MLZ x 2, BT x 2
         if my shield full, =0
         +1
-        -> AS
         -> HAN
-        -> AA
+        -> AS
         -> Laser
+        -> AA
         -> MSL
     MG
         +1
-        -> AS
         -> HAN
-        -> AA
+        -> AS
         -> Laser
+        -> AA
         -> MSL
     MSL x 2
         +1
         load fire; white
-        -> AS
         -> HAN
-        -> AA
+        -> AS
         -> Laser
+        -> AA
         -> MSL
     TLP
         if enemy shield full, =3
@@ -53,8 +54,6 @@ AI:
     SEC
         if enemy TLP, +1
         =0
-    ENG
-        if my shield full, =0
-        if enemy craft, +1
-        if enemy MSL, +1
-        -1
+    AS
+        +1
+        load service

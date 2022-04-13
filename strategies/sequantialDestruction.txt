@@ -1,0 +1,29 @@
+superweapon 
+cannon      
+hanger      // if you don't have AA, prioritize. 
+missile     
+shield
+android     // not until many humans are killed
+medical
+laser
+aa
+(engine)
+(cloak)
+(teleporter)
+
+assume boarders:
+    hanger      
+    superweapon 
+    cannon      
+    missile     
+
+then rooms:
+    missile
+    hanger
+    superweapon
+    cannon
+    shield
+    android
+    medical
+    laser
+    aa

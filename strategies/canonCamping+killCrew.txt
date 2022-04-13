@@ -1,0 +1,31 @@
+Prereq:
+    python 3
+
+Adaptive anti-shield
+    crew AI: leave room when enemy shield is down. 
+    room AI: use `if crew in room` denote whether enemy shield has been dissolved. 
+power switch from anti-shield + TLP to lasers + MD. 
+
+Kill crew:
+    if target has friend: random
+    if target has enemy: stay
+    if target == 100%: TLP
+        // after hitting TLP it is no longer 100%
+    random
+
+Kill crew (alternative):
+    if target has friend: random
+    if target == 100%: TLP
+        // after hitting TLP it is no longer 100%
+    if target no enemy: random
+    if target has enemy: stay
+    shield
+        // when target is NULL
+
+Bugs:
+    why do rooms target TLP evern when TLP < 100%? 
+        (including the alternative)
+
+archive
+    if target < 100%: reactor
+        // because reactor always == 100%, this refreshes

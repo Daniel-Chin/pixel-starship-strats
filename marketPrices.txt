@@ -1,4 +1,8 @@
 void particle   1
-smol crate      1
 expresso        10  *.8 > 7
 scratchy        30  *.8 > 23
+large crates    10
+medium crates   5 / 3
+small creates   1
+chicken skewer  1
+small repair guide  1
